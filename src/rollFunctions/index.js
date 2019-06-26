@@ -19,6 +19,7 @@ const addProficiencyIfItExists=(arr)=>{
 
 const statsRoll=()=>{
   let fourRolls=[roll(1,6),roll(1,6),roll(1,6),roll(1,6)]
+  console.log('four rolls',fourRolls)
   let lowestIdx=0
   let lowestVal=Infinity
   for(let i =0;i<fourRolls.length;i++){
@@ -28,7 +29,7 @@ const statsRoll=()=>{
     }
   }
   fourRolls.splice(lowestIdx,1)
-  console.log('four rolls',fourRolls)
+  console.log('smallest removed hopefully',fourRolls)
   return fourRolls
 }
 
